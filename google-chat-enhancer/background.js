@@ -8,7 +8,7 @@ const promptTemplate = (userMessage) => `Please rephrase and enhance the followi
 async function enhanceMessageWithLLM(message) {
   // Replace with your actual API endpoint and key
   const apiUrl = 'https://api.example.com/llm/flash2.0';
-  const apiKey = 'AIzaSyAXBxl_KnjvBHFd_zOQ9b2Bg_Rn7j7UPIc';
+  const apiKey = '';
 
   // Use the prompt template
   const prompt = promptTemplate(message);
