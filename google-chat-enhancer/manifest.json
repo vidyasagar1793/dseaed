@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Google Chat Message Enhancer",
+  "version": "1.0",
+  "description": "Enhance and rephrase your Google Chat messages using LLM.",
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://chat.google.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Enhance Message",
+    "default_icon": {
+      "16": "check.png",
+      "32": "check.png",
+      "48": "check.png",
+      "128": "check.png"
+    }
+  },
+  "icons": {
+    "16": "check.png",
+    "32": "check.png",
+    "48": "check.png",
+    "128": "check.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://chat.google.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
